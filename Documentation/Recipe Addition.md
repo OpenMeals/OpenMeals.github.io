@@ -92,8 +92,8 @@ Temperature : <Temperature>     # Optional
 ```yaml
 Type : Refine
 Ingredient : <Ingredient>
-Method : <Method>               #Optional
-Description : <Description>     #Optional
+Method : <Method>               # Optional
+Description : <Description>     # Optional
 ```
 
 #### Mix
@@ -108,7 +108,7 @@ Ingredients : <Ingredients>
 ```yaml
 Type : Heat
 Method : Roast
-Degree : Crispy                 #Optional
+Degree : Crispy                 # Optional
 ```
 
 #### Cook
