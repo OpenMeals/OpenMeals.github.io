@@ -1,0 +1,40 @@
+
+Name : Kale Chips
+From : https://github.com/panozzaj/recipes
+
+Tags:
+    - Appetizer
+    - Side Dish
+    - Vegetarian
+    - Vegan
+
+Ingredients:
+    -
+        Name : Kale
+    -
+        Name : Oil
+        Type : Olive
+    -
+        Name : Salt
+        Type : Kosher
+    -
+        Name : Pepper
+        Type : Black
+
+Steps:
+    -
+        Type : Preheat
+        Tool : Oven
+        Temperature : 477.59
+    -
+        Type : Refine
+        Ingredient : Kale
+        Description : Remove large stems & bad leaves
+    -
+        Type : Mix
+        Ingredients : All
+    -
+        Type : Heat
+        Method : Roast
+        Degree : Crispy
+        Note : Shake the pan from time to time to brown the Kale evenly.

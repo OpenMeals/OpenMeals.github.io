@@ -1,0 +1,64 @@
+
+Name : Pasta Pancetta
+From : https://github.com/panozzaj/recipes
+
+Tags:
+    - Main Dish
+
+Ingredients:
+    -
+        Name : Pasta
+        Amount : 1lb
+        Type : Rigatoni
+    -
+        Name : Pancetta
+        Form : Cubed
+    -
+        Name : Heavy Whipped Cream
+        Amount : 0.5pt
+    -
+        Name : Peppers
+        Type : Red
+    -
+        Name : Pepper
+    -
+        Name : Oil
+        Type : Olive
+
+Steps:
+    -
+        Type : Refine
+        Ingredient : Peppers
+        Method : Dice
+    -
+        Type : Cook
+        Ingredient : Pasta
+        Note:
+            - Follow the directions given for your pasta
+            - Only salt them lightly as the pancetta has a lot of salt already
+    -
+        Type : Preheat
+        Tool : Skillet
+        Level : Medium -> High
+    -
+        Type : Heat
+        Ingredient : Peppers
+        With : Oil
+    -
+        Type : Store
+        Ingredient : Peppers
+    -
+        Type : Heat
+        Ingredient : Pancetta
+        Result : Browned & Crispy
+        With : Pepper
+    -
+        Type : Store
+        Ingredient : Pancetta
+    -
+        Type : Heat
+        Ingredient : Heavy Whipped Cream
+        As : Sauce
+    -
+        Type : Mix
+        Ingredient : All
