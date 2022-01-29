@@ -1,6 +1,9 @@
 
 import template from './Page.js';
 
+function tagToHTML(tag){
+    return `<div>${ tag }</div>`;
+}
 
 function ingredientToHTML(ingredient){
 
@@ -17,20 +20,69 @@ function ingredientToHTML(ingredient){
     return `<li>${ content }</li>\n`
 }
 
+function stepToHTML(step){
+
+    const { Type } = step;
+
+    let content = '';
+
+    switch(step){
+    case 'Refine':
+
+        break;
+    case 'Preheat':
+
+        break;
+    case 'Heat':
+
+        break;
+    case 'Cook':
+
+        break;
+    case 'Store':
+
+        break;
+    case 'Mix':
+
+        break;
+    }
+
+    return `<li>${ content }</li>`;
+}
+
 
 export default function(recipe){
 
     console.log(recipe);
 
-    const { Ingredients } = recipe;
+    const { Name , Ingredients , Steps , Tags } = recipe;
 
-    let html = '';
+    const tags = Tags
+        .map(tagToHTML)
+        .join('');
+
+    let html = `
+        <h1>${ Name }</h1>
+        <div class = 'tags'>${ tags }</div>
+    `;
 
     const ingredients = Ingredients
         .map(ingredientToHTML)
         .join('<br>');
 
-    html += `<ul>${ ingredients }</ul>`;
+    html += `
+        <h2>Ingredients:</h2>
+        <ul>${ ingredients }</ul>
+    `;
+
+    const steps = Steps
+        .map(stepToHTML)
+        .join('<br>');
+
+    html += `
+        <h2>Steps:</h2>
+        <ul>${ steps }</ul>
+    `;
 
     return template('',html);
 }
