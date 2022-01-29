@@ -14,8 +14,8 @@
 
 ## Adjusting Recipes
 
-***[Discuss]*** *the the adjustment and once you* <br>
-*are set on what to change, open an* ***[Issue]*** *.*
+***[Discuss]*** *the adjustment and once you are* <br>
+*set on what to change, open a new* ***[Issue]*** *.*
 
 
 <!----------------------------------------------------------------------------->
