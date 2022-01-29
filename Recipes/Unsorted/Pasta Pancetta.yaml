@@ -39,7 +39,7 @@ Steps:
     -
         Type : Preheat
         Tool : Skillet
-        Level : Medium -> High
+        Temperature : Medium -> High
     -
         Type : Heat
         Ingredient : Peppers
@@ -50,7 +50,7 @@ Steps:
     -
         Type : Heat
         Ingredient : Pancetta
-        Result : Browned & Crispy
+        Degree : Browned & Crispy
         With : Pepper
     -
         Type : Store
