@@ -1,0 +1,61 @@
+
+Name : Cole Slaw
+From : https://github.com/obfuscurity/food-recipes/
+
+Tags:
+    - Side Dish
+
+Ingredients:
+    -
+        Name : Cabbage
+        Amount : 6 Cups
+        Form : Shredded
+    -
+        Name : Carrots
+        Amount : 1 Cup
+        Form : Shredded
+    -
+        Name : Mayonnaise
+        Amount : 1 Cup
+    -
+        Name : Vinegar
+        Type : White Wine
+        Amount : 0.25 Cups
+    -
+        Name : Seeds
+        Type : Celery
+        Amount : 1 TableSpoon
+    -
+        Name : Sugar
+        Amount : 0.25 Cups
+    -
+        Name : Salt
+    -
+        Name : Pepper
+
+Steps:
+    -
+        Type : Combine
+        Ingredients:
+            - Cabbage
+            - Carrots
+        Tool : Large Bowl
+    -
+        Type : Combine
+        Ingredients:
+            - Mayonnaise
+            - Vinegar
+            - Seeds
+            - Sugar
+            - Salt
+            - Pepper
+        As : Dressing
+    -
+        Type : Combine
+        Method : Toss
+        Ingredients:
+            - Large Bowl
+            - Dressing
+    -
+        Type : Chill
+        Ingredients : All

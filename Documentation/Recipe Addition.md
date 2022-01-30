@@ -70,6 +70,10 @@ in a step, such as `Oil` while `Heating` an `Ingredient`.
 Designate the product of the current step as <br>
 a specific part of the dish, such as `Sauce`.
 
+##### Examples
+- `Sauce`
+- `Dressing`
+
 #### Note
 
 Notes can be added to any step.
@@ -96,10 +100,10 @@ Method : <Method>               # Optional
 Description : <Description>     # Optional
 ```
 
-#### Mix
+#### Combine
 
 ```yaml
-Type : Mix
+Type : Combine
 Ingredients : <Ingredients>
 ```
 
@@ -109,6 +113,13 @@ Ingredients : <Ingredients>
 Type : Heat
 Method : Roast
 Degree : Crispy                 # Optional
+```
+
+#### Chill
+
+```yaml
+Type : Chill
+Ingredients : <Ingredients>
 ```
 
 #### Cook
