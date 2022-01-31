@@ -17,7 +17,7 @@ function ingredientToHTML(ingredient){
     if(Amount)
         content += `<br>\n${ Amount }`;
 
-    return `<li>${ content }</li>\n`
+    return `<li>${ content }</li>\n`;
 }
 
 function stepToHTML(step){
@@ -28,6 +28,31 @@ function stepToHTML(step){
 
     switch(step){
     case 'Refine':
+
+        const { Ingredient , Description } = step;
+
+        if(Description){
+            content += `
+                <p>
+                    <b>${ Ingredient }</b><br>
+                    ${ Description }
+                </p>
+            `;
+            break;
+        }
+
+        const { Method } = step;
+
+        if(Method){
+            switch(Method){
+            case 'Dice':
+                content += `<p>Dice the ${ Ingredient }</p>`;
+                break
+            }
+
+            break;
+        }
+
 
         break;
     case 'Preheat':
@@ -42,12 +67,22 @@ function stepToHTML(step){
     case 'Store':
 
         break;
-    case 'Mix':
+    case 'Combine':
+
+        break;
+    case 'Chill':
 
         break;
     }
 
-    return `<li>${ content }</li>`;
+    return `
+        <li>
+            <img
+                alt = '${ step }'
+                src = 'https://github.com/OpenMeals/Icons/raw/main/Operations/${ step }.png'
+            >
+            ${ content }
+        </li>`;
 }
 
 
