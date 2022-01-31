@@ -1,0 +1,35 @@
+
+html {
+    background-color: #af2a45;
+    color: #efefef;
+}
+
+body {
+    background-color: #d64160;
+    margin: 30px;
+    padding: 50px;
+    border-radius: 16px;
+    box-shadow: 2px 2px #000000aa;
+}
+
+::marker {
+    color: #ffbcc9;
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px
+}
+
+.tags > * {
+    padding: 5px 12px;
+    border-radius: 100px;
+    background-color: #af2a45;
+    user-select: none;
+    border: 1px solid transparent;
+}
+
+.tags > *:hover {
+    border-color: white;
+}
