@@ -26,7 +26,7 @@ function stepToHTML(step){
 
     let content = '';
 
-    switch(step){
+    switch(Type){
     case 'Refine':
 
         const { Ingredient , Description } = step;
@@ -78,8 +78,8 @@ function stepToHTML(step){
     return `
         <li>
             <img
-                alt = '${ step }'
-                src = 'https://github.com/OpenMeals/Icons/raw/main/Operations/${ step }.png'
+                alt = '${ Type }'
+                src = 'https://github.com/OpenMeals/Icons/raw/main/Operations/${ Type }.png'
             >
             ${ content }
         </li>`;
