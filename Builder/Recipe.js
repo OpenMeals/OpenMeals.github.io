@@ -78,6 +78,7 @@ function stepToHTML(step){
     return `
         <li>
             <img
+                width = '100px'
                 alt = '${ Type }'
                 src = 'https://github.com/OpenMeals/Icons/raw/main/Operations/${ Type }.png'
             >
@@ -107,7 +108,9 @@ export default function(recipe){
 
     html += `
         <h2>Ingredients:</h2>
-        <ul>${ ingredients }</ul>
+        <div class = 'ingredients'>
+            <ul>${ ingredients }</ul>
+        </div>
     `;
 
     const steps = Steps
@@ -116,7 +119,9 @@ export default function(recipe){
 
     html += `
         <h2>Steps:</h2>
-        <ul>${ steps }</ul>
+        <div class = 'steps'>
+            <ul>${ steps }</ul>
+        </div>
     `;
 
     return template('',html);
