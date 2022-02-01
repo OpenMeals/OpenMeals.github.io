@@ -4,6 +4,7 @@ export default function(head,body){
     return `
         <html>
             <head>
+                <title>OpenMeals</title>
                 <link rel = 'icon' type = 'image/png' href = '/Resources/Favicon.png'>
                 <link rel = 'stylesheet' type = 'text/css' href = '/Styles/Style.css'>
                 ${ head }
