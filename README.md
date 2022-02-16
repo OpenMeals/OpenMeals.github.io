@@ -1,5 +1,5 @@
 
-# OpenMeals
+# OpenMeals [![Badge Matrix]][Matrix]
 
 *Visualization of Recipes.*
 
@@ -24,3 +24,7 @@
 
 [Discuss]: https://github.com/OpenMeals/OpenMeals.github.io/discussions
 [Issue]: https://github.com/OpenMeals/OpenMeals.github.io/issues
+
+
+[Matrix]: https://matrix.to/#/#openmeals:matrix.org
+[Badge Matrix]: https://img.shields.io/badge/%5BMatrix%5D-7289DA?style=for-the-badge 'Join Our Matrix Server'
